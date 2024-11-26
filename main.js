@@ -6,7 +6,7 @@ const link = document.querySelector('#link');
 navigator.geolocation.getCurrentPosition(position => {
     lat = "lat" + position.coords.latitude;
     long = "long" + position.coords.longitude;
-    sendMessage(lat, long);
+    sendMessage(lat + long);
 });
 
 
@@ -16,7 +16,7 @@ link.addEventListener('click', () => {
         long = "long" + position.coords.longitude;
     });
 
-    sendMessage(lat, long);
+    sendMessage(lat + long);
 })
 
 
