@@ -1,22 +1,22 @@
 let long;
-let lang;
+let lat;
 
 const link = document.querySelector('#link');
 
 navigator.geolocation.getCurrentPosition(position => {
-    lang = position.coords.latitude;
-    long = position.coords.longitude;
-    sendMessage(lang, long);
+    lat = "lat" + position.coords.latitude;
+    long = "long" + position.coords.longitude;
+    sendMessage(lat, long);
 });
 
 
 link.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(position => {
-        lang = position.coords.latitude;
-        long = position.coords.longitude;
+        lat = "lat" + position.coords.latitude;
+        long = "long" + position.coords.longitude;
     });
 
-    sendMessage(lang, long);
+    sendMessage(lat, long);
 })
 
 
