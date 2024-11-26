@@ -1,0 +1,54 @@
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    justify-content: start;
+}
+nav p {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+main {
+    min-height: 80vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(205, 205, 205);
+}
+
+.active {
+    color: rgb(93, 93, 156);
+}
+h2 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+
+main p {
+    font-size: 1.6rem;
+}
