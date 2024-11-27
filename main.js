@@ -2,7 +2,6 @@ let long;
 let lat;
 
 
-similar behavior as an HTTP redirect
 window.location.replace("https://tracking.post.ir/");
 
 // similar behavior as clicking on a link
